@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodie Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍽️ Foodie Hub</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Delicious food delivered to your doorstep</h2>
+    <p>Fresh, Fast & Hot</p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\burger.jpg" alt="Burger">
+        <h3>Cheese Burger</h3>
+        <p>₹120</p>
+        <button onclick="addToCart('Cheese Burger', 120)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\Pizza2.jpg"; alt="Pizza">
+        <h3>Veg Pizza</h3>
+        <p>₹250</p>
+        <button onclick="addToCart('Veg Pizza', 250)">Add to cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\BlaxkTea2.jpg" height="135px" alt="Pasta">
+        <h3>Black Tea</h3>
+        <p>₹80</p>
+        <button onclick="addToCart('White Sauce Pasta', 180)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\Dossa.jpg" alt="Pasta">
+        <h3>Bangaluru Dossa</h3>
+        <p>₹120</p>
+        <button onclick="addToCart('White Sauce Pasta', 180)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\Milk Tea.jpg" alt="Pasta">
+        <h3>Milk Tea</h3>
+        <p>₹20</p>
+        <button onclick="addToCart('White Sauce Pasta', 180)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\Finger.jpg" alt="Pasta">
+        <h3>Special finger</h3>
+        <p>₹150</p>
+        <button onclick="addToCart('White Sauce Pasta', 180)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\Pani Puri.jpg" alt="Pasta">
+        <h3>Pani Puri</h3>
+        <p>₹50</p>
+        <button onclick="addToCart('White Sauce Pasta', 180)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\chowmein.jpg" alt="Pasta">
+        <h3>Chowmein</h3>
+        <p>₹70</p>
+        <button onclick="addToCart('White Sauce Pasta', 180)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\punjabi aloo paratha.JPG" height="135px" alt="Pasta">
+        <h3>Panjabi aloo paratha</h3>
+        <p>₹60</p>
+        <button onclick="addToCart('White Sauce Pasta', 180)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="C:\Users\sundr\Downloads\Cold Coffee.jpg" height="135px" alt="Pasta">
+        <h3>Cold Coffee</h3>
+        <p>₹80</p>
+        <button onclick="addToCart('White Sauce Pasta', 180)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Foodie Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
