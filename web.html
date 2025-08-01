@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🍽️ Foodie Hub</h1>
+    <nav>
+      <a href="#breakfast">Breakfast</a>
+      <a href="#lunch">Lunch</a>
+      <a href="#dinner">Dinner</a>
+      <a href="#snacks">Snacks</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Delicious Food Delivered Fast</h2>
+    <p>Order your favorite meals in just one click!</p>
+  </section>
+
+  <!-- BREAKFAST -->
+  <section id="breakfast">
+    <h2>🥞 Breakfast</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Indian Poha</h3>
+        <p>Special</p>
+        <p class="price">$6</p>
+        <button class="add-btn" data-name="Pancakes" data-price="6">Add to Cart</button>
+      </div>
+      <div class="item">
+        <h3>Bread</h3>
+        <p>Healthy and Protein-rich</p>
+        <p class="price">$5</p>
+        <button class="add-btn" data-name="Omelette" data-price="5">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUNCH -->
+  <section id="lunch">
+    <h2>🍛 Lunch</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Veg Curry</h3>
+        <p>Spicy and Delicious</p>
+        <p class="price">$12</p>
+        <button class="add-btn" data-name="Chicken Curry" data-price="12">Add to Cart</button>
+      </div>
+      <div class="item">
+        <h3>Veg Thali</h3>
+        <p>Complete Indian Meal</p>
+        <p class="price">$10</p>
+        <button class="add-btn" data-name="Veg Thali" data-price="10">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DINNER -->
+  <section id="dinner">
+    <h2>🍽️ Dinner</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Pizza</h3>
+        <p>Cheesy and Hot</p>
+        <p class="price">$15</p>
+        <button class="add-btn" data-name="Pizza" data-price="15">Add to Cart</button>
+      </div>
+      <div class="item">
+        <h3>Pasta</h3>
+        <p>Italian Special</p>
+        <p class="price">$12</p>
+        <button class="add-btn" data-name="Pasta" data-price="12">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SNACKS -->
+  <section id="snacks">
+    <h2>🍟 Snacks</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Burger</h3>
+        <p>Juicy and Tasty</p>
+        <p class="price">$8</p>
+        <button class="add-btn" data-name="Burger" data-price="8">Add to Cart</button>
+      </div>
+      <div class="item">
+        <h3>French Fries</h3>
+        <p>Crispy and Golden</p>
+        <p class="price">$4</p>
+        <button class="add-btn" data-name="French Fries" data-price="4">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CART SECTION -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <p>Total: $<span id="total">0</span></p>
+
+    <!-- Delivery Address -->
+    <label for="address">Delivery Address:</label>
+    <input type="text" id="address" placeholder="Enter your address">
+
+    <button id="checkout-btn">Checkout</button>
+  </section>
+
+  <!-- ORDER SUCCESS MESSAGE -->
+  <div id="success-message" class="hidden">
+    ✅ Food Delivered Successfully!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
